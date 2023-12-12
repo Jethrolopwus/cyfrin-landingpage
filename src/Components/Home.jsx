@@ -1,0 +1,125 @@
+import React from 'react'
+import { FaArrowRight } from "react-icons/fa";
+import avatar from "../Components/images/avatar.png"
+import avatar2 from "../Components/images/avatar-2.png"
+import avatar3 from "../Components/images/avatar-3.png"
+import avatar4 from "../Components/images/avatar-4.png"
+import avatar5 from "../Components/images/avatar-5.png"
+import avatar6 from "../Components/images/avatar-6.png"
+import avatar7 from "../Components/images/avatar-7.png"
+import avatar8 from "../Components/images/avatar-8.png"
+import avatar9 from "../Components/images/avatar-9.png";
+import background from "../Components/images/hero-background.png"
+import lesson from "../Components/images/lesson-hero.jpg"
+import Access from "../Components/images/accessible.png"
+import start from "../Components/images/start-when.png"
+import industry from "../Components/images/battle-tested.png"
+import avatarcdb from "../Components/images/avatars.cdb.png"
+import codesnipet from "../Components/images/code-snippet.png"
+import group from "../Components/images/avatar-1.27.png"
+import group2 from "../Components/images/avatar-10.png"
+import group3 from "../Components/images/avatar-3.png"
+import group4 from "../Components/images/avatar-5.png"
+import group5 from "../Components/images/avatar-7.png"
+
+const Home = () => {
+  return ( 
+      <div className=''>
+          <div className='flex items-center justify-center'>
+              <div className='flex items-center border-2 border-blue-100 p-1 text-sm text-gray-600 font-medium  bg-blue-50 rounded-full gap-2'>
+                <div className='border-2 border-blue-100 px-2 rounded-full'>New courses!</div>
+              <span className='flex items-center gap-1 pr-1'> <span>Smart contract security and auditing</span>
+                <FaArrowRight  className='text-blue-600 text-xs'/>
+                </span>
+              </div>
+          </div>
+      <div className="flex flex-col items-center">
+            <h2 className='text-6xl px-8 max-w-6xl my-8'>Teaching the next generation of smart <span className='mx-28'>contract developers.</span> </h2>
+            <p className='text-gray-400 text-md font-medium '>Learn from industry-leading experts how to build the next generation of web3 <br/> <span className='mx-32'>applications and kickstart your career.</span> </p>
+            <button className='border-1 bg-blue-600 hover:bg-blue-900 text-white font-bold text-md mt-4 rounded-lg p-4'>Apply for early access</button>
+      </div>
+      <section>
+        <div className='flex flex-col items-center my-10 mx-10'>
+            <div className='text-md text-gray-400'>
+            <p>Over 100,000+ students taught</p>
+            <span className='flex items-center'>
+              <img src={avatar} alt='avatar' width={40} height={20} />
+              <img src={avatar2} alt='avatar' width={40} height={20} />
+              <img src={avatar3} alt='avatar' width={40} height={20} />
+              <img src={avatar4} alt='avatar' width={40} height={20} />
+              <img src={avatar5} alt='avatar' width={40} height={20} />
+              <img src={avatar6} alt='avatar' width={40} height={20} />
+              <img src={avatar7} alt='avatar' width={40} height={20} />
+              <img src={avatar8} alt='avatar' width={40} height={20} />
+              <img src={avatar9} alt='avatar' width={40} height={20} />
+
+            </span>
+            </div>
+            <div className='my-10'>
+            <img className='z-1' src={lesson} alt='Hero-background' width={1000} />
+            <img  src={background} alt='section background color' width={1050} className='h-56 rounded-3xl' />
+            </div>
+          </div>
+          <div>
+            <div>
+              {/* Carouse  */}
+            </div>
+        </div>  
+        
+        <div>
+          <div className='flex flex-col items-center '>
+          <span className='text-blue-600 font-semibold'>Why us</span>
+          <h1 className='text-3xl font-semibold '>From Beginner to Expert</h1>
+          <p className='my-4 text-gray-400 text-lg font-bold max-w-2xl'>Start your Web3 journey with our beginner-friendly resources and step-by-step guidance taught by the industry’s leading experts.</p>
+          </div>
+          <div className=' flex mx-auto gap-4  max-w-5xl my-4 '>
+            <div className='border-2 shadow-3xl rounded-2xl hover:scale-110 transform transition-transform duration-[1s] w-full sm:w-1/2 md:w-1/3 lg:w-[30%] '>
+              <img src={Access} alt='access' width={300} height={100} />
+              <div className='items-center my-12'>
+                <h2 className='font-semibold text-3xl text-center'>Accessible</h2>
+              <p className='text-md font-semibold text-gray-600 text-center my-2'>Education should be accessible by everyone. This is why our courses are open and free from any charge</p>
+              </div>
+            </div>
+            <div className='border-2 shadow-2xl rounded-3xl hover:scale-110 transform transition-transform duration-[1s] w-full sm:w-1/2 md:w-1/3 lg:w-[30%]'>
+                <img  src={industry} alt='industry'width={300} height={100} />
+              <div className='items-center my-8'>
+              <h2 className='font-semibold text-3xl text-center'>Industry Leading</h2>
+              <p className='text-sm font-semibold text-gray-600 text-center my-2'>Our courses are created by world-recognized experts to offer you the highest level of education in web3.</p>
+              </div>
+            </div>
+            <div className='border-2 shadow-2xl rounded-2xl hover:scale-110 transform transition-transform duration-[1s] w-full sm:w-1/2 md:w-1/3 lg:w-[30%] '>
+              <img src={start} alt='when to start'width={300} height={100} />
+              <div className=' items-center mb-12'>
+                 <h2 className='font-semibold text-3xl text-center '>Start when you want</h2>
+                <p className='text-sm font-semibold text-gray-600 text-center '>Study full time, part time, and anywhere in between.</p>
+               </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className='mt-8 mx-8  flex gap-4 '>
+          <div className=' border-2 px-8  mt-4 shadow-2xl rounded-xl'>
+            <img src={avatarcdb} alt='avatar for the courses' width={1000} height={100} />
+            <div className='flex my-8'>
+            <img src={group} alt='groups of avatar' width={50} />
+            <img src={group2} alt='groups of avatar' width={50} />
+            <img src={group3} alt='groups of avatar' width={50} />
+            <img src={group4} alt='groups of avatar' width={50} />
+            <img src={group5} alt='groups of avatar' width={50} />
+            </div>
+                <h2 className='text-3xl text-center text-gray-600 font-semibold my-4'>Over 100,000 Students Taught</h2> 
+                <p className='text-gray-600 text-center '> Join a community of students in Web3.</p>
+          </div>
+          <div className='border-2 px-8 mt-4 rounded-xl ml-4 shadow-2xl'>
+            <img src={codesnipet} alt='codeSnipet for the courses' width={400} height={100} />
+            <h2 className='text-3xl text-center text-gray-600 font-semibold'>Build real life projects</h2>
+            <p className='text-gray-600 text-center'>Create your web3 portfolio and apply your knowledge to real-world use cases. Build a portfolio with dozens of projects to bring your career to the next level.</p>
+          </div>
+        </div>
+      </section>
+    </div> 
+  )
+}
+
+export default Home
