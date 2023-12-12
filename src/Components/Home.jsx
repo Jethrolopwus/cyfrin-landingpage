@@ -21,6 +21,8 @@ import group2 from "../Components/images/avatar-10.png"
 import group3 from "../Components/images/avatar-3.png"
 import group4 from "../Components/images/avatar-5.png"
 import group5 from "../Components/images/avatar-7.png"
+import  Carousel  from "../Components/Carousel";
+import Courses from '../Components/Courses';
 
 const Home = () => {
   return ( 
@@ -56,13 +58,13 @@ const Home = () => {
             </span>
             </div>
             <div className='my-10'>
-            <img className='z-1' src={lesson} alt='Hero-background' width={1000} />
-            <img  src={background} alt='section background color' width={1050} className='h-56 rounded-3xl' />
+            <img className='' src={lesson} alt='Hero-background' width={1000}  />
+            <img  src={background} alt='section background color' width={1050} height={100} className='h-56 rounded-3xl' />
             </div>
           </div>
           <div>
             <div>
-              {/* Carouse  */}
+              < Carousel />
             </div>
         </div>  
         
@@ -117,6 +119,7 @@ const Home = () => {
             <p className='text-gray-600 text-center'>Create your web3 portfolio and apply your knowledge to real-world use cases. Build a portfolio with dozens of projects to bring your career to the next level.</p>
           </div>
         </div>
+          <Courses/>
       </section>
     </div> 
   )
