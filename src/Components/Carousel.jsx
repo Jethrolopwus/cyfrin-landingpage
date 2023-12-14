@@ -1,7 +1,7 @@
 import React from "react";
 
 // import govirtual from "../images/govirtual.png";
-import uj from "../Components/images/uj.jpg";
+// import uj from "../Components/images/uj.jpg";
 // import ya from "../images/ya.png";
 // import sterling from "../images/sterling.png";
 // import tic from "../images/tic.png";
@@ -30,21 +30,21 @@ const Carousel = () => {
       <div className="py-12 md:py-20">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-          <h2 className="h2 font-cabinet-grotesk text-green-800">
-            Our Sponsors/Partners:
+          <h2 className="h2 font-cabinet-grotesk text-gray-600 text-xl">
+           Our students have been hired by the top companies in Web3
           </h2>
         </div>
 
         {/* Carousel built with Swiper.js [https://swiperjs.com/] */}
         {/* * Custom styles in src/css/additional-styles/theme.scss */}
         <Swiper
-            autoplay={{delay:1500, disableOnInteraction:false}}
+            autoplay={{delay:100, disableOnInteraction:false}}
           modules={[Autoplay]}
           slidesPerView={4}
           spaceBetween={0}
           className="flex"
           >
-          <SwiperSlide className="bg-slate-900 ">
+          {/* <SwiperSlide className="bg-slate-900 ">
              <div className="!h-32 bg-green-800 rounded-2xl flex items-center justify-center group">
               <img
                 className="opacity-40 w-full group-hover:opacity-100 rounded-2xl transform duration-500 ease-in-out"
@@ -52,7 +52,7 @@ const Carousel = () => {
                 alt="Client 02"
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
               <img
@@ -108,79 +108,6 @@ const Carousel = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        {/* <div className="clients-carousel swiper-container relative before:absolute before:inset-0 before:w-32 before:z-10 before:pointer-events-none before:bg-gradient-to-r before:from-green-800 after:absolute after:inset-0 after:left-auto after:w-32 after:z-10 after:pointer-events-none after:bg-gradient-to-l after:from-green-800">
-          <div className="swiper-wrapper !ease-linear select-none">
-            {/* Carousel items */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100  transform duration-500 ease-in-out" src={govirtual} alt="Client 01" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 rounded-2xl transform duration-500 ease-in-out"
-                src={uj}
-                alt="Client 02"
-              />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out" src={ya} alt="Client 03" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out" src={sterling} alt="Client 04" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100 rounded-2xl transform duration-500 ease-in-out" src={vesti} alt="Client 05" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100 rounded-2xl transform duration-500 ease-in-out" src={tic} alt="Client 06" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 !h-32 !w-32 rounded-2xl transform duration-500 ease-in-out"
-                src={gps}
-                alt="Client 07"
-              />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out"
-                src={giz}
-                alt="Client 08"
-              />
-            </div>
-
-            <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 transform rounded-2xl duration-500 ease-in-out"
-                src={jtg}
-                alt="Client 09"
-              />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 rounded-2xl transform duration-500 ease-in-out"
-                src={itf}
-                alt="Client 10"
-              />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out"
-                src={gdg}
-                alt="Client 11"
-              />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out" src={cp} alt="Client 11" />
-            </div> */}
-            {/* <div className=" !h-32 !w-32 bg-green-800 rounded-2xl flex items-center justify-center group">
-              <img
-                className="opacity-40 group-hover:opacity-100 transform duration-500 ease-in-out"
-                src={pictda}
-                alt="Client 11"
-              />
-            </div>
-          </div>
-        </div> */} 
       </div>
     </section>
   );

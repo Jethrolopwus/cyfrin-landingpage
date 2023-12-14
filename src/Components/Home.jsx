@@ -26,25 +26,25 @@ import Courses from '../Components/Courses';
 
 const Home = () => {
   return ( 
-      <div className=''>
-          <div className='flex items-center justify-center'>
+      <div className='my-36 '>
+          <div className='flex items-center justify-center '>
               <div className='flex items-center border-2 border-blue-100 p-1 text-sm text-gray-600 font-medium  bg-blue-50 rounded-full gap-2'>
                 <div className='border-2 border-blue-100 px-2 rounded-full'>New courses!</div>
-              <span className='flex items-center gap-1 pr-1'> <span>Smart contract security and auditing</span>
+                <span className='flex items-center gap-1 pr-1'> <span>Smart contract security and auditing</span>
                 <FaArrowRight  className='text-blue-600 text-xs'/>
                 </span>
               </div>
           </div>
-      <div className="flex flex-col items-center">
-            <h2 className='text-6xl px-8 max-w-6xl my-8'>Teaching the next generation of smart <span className='mx-28'>contract developers.</span> </h2>
+      <div className="flex flex-col items-center mt-16">
+            <h2 className='text-6xl mx-6 text-center font-semibold  my-8  leading-snug'>Teaching the <span className='underline '>next generation</span>  of smart <span className='mx-32'>contract developers.</span> </h2>
             <p className='text-gray-400 text-md font-medium '>Learn from industry-leading experts how to build the next generation of web3 <br/> <span className='mx-32'>applications and kickstart your career.</span> </p>
-            <button className='border-1 bg-blue-600 hover:bg-blue-900 text-white font-bold text-md mt-4 rounded-lg p-4'>Apply for early access</button>
+            <button className='border-1 bg-blue-600 hover:bg-blue-900 text-white font-bold text-md mt-10 rounded-lg p-4'>Apply for early access</button>
       </div>
       <section>
         <div className='flex flex-col items-center my-10 mx-10'>
-            <div className='text-md text-gray-400'>
-            <p>Over 100,000+ students taught</p>
-            <span className='flex items-center'>
+            <div className='text-md text-gray-400 mt-8'>
+            <p className=''>Over 100,000+ students taught</p>
+            <span className='flex items-center mt-8'>
               <img src={avatar} alt='avatar' width={40} height={20} />
               <img src={avatar2} alt='avatar' width={40} height={20} />
               <img src={avatar3} alt='avatar' width={40} height={20} />
@@ -54,12 +54,13 @@ const Home = () => {
               <img src={avatar7} alt='avatar' width={40} height={20} />
               <img src={avatar8} alt='avatar' width={40} height={20} />
               <img src={avatar9} alt='avatar' width={40} height={20} />
-
             </span>
             </div>
-            <div className='my-10'>
-            <img className='' src={lesson} alt='Hero-background' width={1000}  />
-            <img  src={background} alt='section background color' width={1050} height={100} className='h-56 rounded-3xl' />
+            <div className='my-10 relative'>
+            <img  src={background} alt='section background color' className='h-screen w-full rounded-3xl' />
+            </div>
+            <div className='absolute  left-0 mt-36 mx-9'>
+            <img className='h-screen' src={lesson} alt='Hero-background'  />
             </div>
           </div>
           <div>
