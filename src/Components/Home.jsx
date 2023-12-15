@@ -26,22 +26,23 @@ import Courses from '../Components/Courses';
 
 const Home = () => {
   return ( 
-      <div className='my-36 '>
-          <div className='flex items-center justify-center '>
+      <div className='mt-32 w-full '>
+          <div className='flex items-center justify-center  '>
               <div className='flex items-center border-2 border-blue-100 p-1 text-sm text-gray-600 font-medium  bg-blue-50 rounded-full gap-2'>
                 <div className='border-2 border-blue-100 px-2 rounded-full'>New courses!</div>
                 <span className='flex items-center gap-1 pr-1'> <span>Smart contract security and auditing</span>
                 <FaArrowRight  className='text-blue-600 text-xs'/>
-                </span>
+                </span> 
               </div>
           </div>
-      <div className="flex flex-col items-center mt-16">
-            <h2 className='text-6xl mx-6 text-center font-semibold  my-8  leading-snug'>Teaching the <span className='underline '>next generation</span>  of smart <span className='mx-32'>contract developers.</span> </h2>
-            <p className='text-gray-400 text-md font-medium '>Learn from industry-leading experts how to build the next generation of web3 <br/> <span className='mx-32'>applications and kickstart your career.</span> </p>
+      <div className="flex flex-col text-2xl sm:text-center  items-center mt-8 ">
+            <h2 className=' text-2xl sm:text-lg md:text-3xl xl:text-6xl text-center font-semibold  my-8  leading-snug'>Teaching the <span className='border-b-4  border-black border-solid '>next generation</span>  of smart <span className=''>contract developers.</span> </h2>
+            <p className='text-gray-400  sm:text-3xl md:text-2xl text-md mx-2  '>Learn from industry-leading experts how to build the next generation of web3 <span>applications and kickstart your career.</span> </p>
             <button className='border-1 bg-blue-600 hover:bg-blue-900 text-white font-bold text-md mt-10 rounded-lg p-4'>Apply for early access</button>
       </div>
+
       <section>
-        <div className='flex flex-col items-center my-10 mx-10'>
+        <div className='flex flex-col  items-center my-10 '>
             <div className='text-md text-gray-400 mt-8'>
             <p className=''>Over 100,000+ students taught</p>
             <span className='flex items-center mt-8'>
@@ -71,7 +72,7 @@ const Home = () => {
         
         <div>
           <div className='flex flex-col items-center '>
-          <span className='text-blue-600 font-semibold'>Why us</span>
+          <span className='text-blue-600 font-semibold '>Why us </span>
           <h1 className='text-3xl font-semibold '>From Beginner to Expert</h1>
           <p className='my-4 text-gray-400 text-lg font-bold max-w-2xl'>Start your Web3 journey with our beginner-friendly resources and step-by-step guidance taught by the industry’s leading experts.</p>
           </div>
