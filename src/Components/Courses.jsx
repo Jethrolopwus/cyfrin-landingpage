@@ -11,7 +11,8 @@ import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { Link } from 'react-router-dom';
-
+import codehawksLogo from "../Components//images/codehawks-logo.png"
+import { FiPlusCircle } from "react-icons/fi";
 
 
 const Courses = () => {
@@ -235,16 +236,19 @@ const Courses = () => {
         </div>
       </div>
     </div>
-    <div className='bg-black opacity-1 mt-4 border-b-2 rounded-2xl'>
-      <div className='border-2 border-gray-200 rounded-3xl'>
-        <div className='flex items-center'>
-              <h2>Not sure where to go after completing our courses?</h2>
-              <p>Apply your skills at the CodeHawks competitive audits platform. Hack, win prizes and shape the future of Web3!</p>
-              <span className='flex items-center gap-2 m-8 w-36 border-2 py-2 border-blue-100 text-white rounded-lg'>
+    <div className='bg-black sm:mt-2 md:mx-2  mt-4 border-b-2 rounded-lg'>
+      <div className=' py-32'>
+        <div className='flex items-center gap-2 mx-4  border-2 border-gray-200 rounded-3xl'>
+             <div className='m-8'>
+             <img src={codehawksLogo} alt=" Code Hawk logo"/>
+              <h2 className='text-white text-2xl sm:text-xl md:2xl py-8'>Not sure where to go after completing our courses?</h2>
+              <p className='text-white'>Apply your skills at the CodeHawks competitive audits platform. Hack, win prizes and shape the future of Web3!</p>
+              <span className='flex items-center gap-2 m-8 justify-center border-2 py-2 border-blue-100 text-white rounded-lg'>
               Visit CodeHawks
               <FaArrowRight  className='text-white text-sm '/>
             </span>
-            <div>
+             </div>
+            <div className='py-8 h-30 px-2 '>
             <img src={codeHawks} alt="codeHawks leading bg" />
           </div>
         </div>
@@ -252,35 +256,65 @@ const Courses = () => {
       
 
     </div>
-    <div>
-      <div>
-        <p>Support</p>
-        <h1>FAQs</h1>
-        <p>Can’t find an answer? Join our Discord or follow us on Twitter.</p>
-        <span className='flex items-center gap-2 m-8 w-36 border-2 py-2 border-blue-100 text-white rounded-lg'>
-              Visit CodeHawks
-              <FaArrowRight  className='text-white text-sm '/>
+    <div className='flex items-center'>
+      <div className='m-8'>
+        <p className='text-blue-600 py-4'>Support</p>
+        <h1 className='text-3xl font-bold py-8'>FAQs</h1>
+        <p className='text-2xl text-gray-600'>Can’t find an answer? Join our Discord or follow us on Twitter.</p>
+       <div className='flex items-center justify-around m-8'>
+         <span className='flex items-center  border-2 py-2 w-36 justify-center  border-blue-100 rounded-lg'>
+              <FaDiscord className='' />
+               <p className='text-lg px-4'>Discord</p> 
             </span>
-            <span className='flex items-center gap-2 m-8 w-36 border-2 py-2 border-blue-100 text-white rounded-lg'>
-              Visit CodeHawks
-              <FaArrowRight  className='text-white text-sm '/>
+            <span className='flex items-center  w-36 justify-center  border-2 py-2 border-blue-100  rounded-lg'>
+            <FiTwitter />
+            <p className='text-lg px-4'>Twitter</p>
             </span>
+       </div>
       </div>
-      <div>
-        <p>How do I get access to Cyfrin Updraft?</p>
-        <p>When will I receive my early access code?</p>
-        <p>Why early access?</p>
-        <p>Are your courses completely free?</p>
-        <p>When do your courses start?</p>
-        <p>How long do courses take to complete?</p>
-        <p>Do I get any certifications for completing the Cyfrin Updraft courses?</p>
-        <p>I have never coded in my life, are these courses suitable for me?</p>
-        <p>What is Cyfrin Updraft?</p>
-        <p>What’s happened to Patrick’s courses?</p>
-        <p>I have never coded in my life, are these courses suitable for me?</p>
-        <p>What is Cyfrin Updraft?</p>
-        <p>What’s happened to Patrick’s courses?</p>
-        <p>How is Cyfrin Updraft connected to CodeHawks?</p>
+      <div className='m-8 p-8'>
+        <span className='flex items-center justify-between p-4'>How do I get access to Cyfrin Updraft?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>When will I receive my early access code?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>Why early access?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>Are your courses completely free?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4' >When do your courses start?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>How long do courses take to complete?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>Do I get any certifications for completing the Cyfrin Updraft courses?
+        <FiPlusCircle />
+        </span>
+        <span nonce='flex  justify-between py-4'>I have never coded in my life, are these courses suitable for me?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>What is Cyfrin Updraft?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>What’s happened to Patrick’s courses?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>I have never coded in my life, are these courses suitable for me?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>What is Cyfrin Updraft?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>What’s happened to Patrick’s courses?
+        <FiPlusCircle />
+        </span>
+        <span className='flex items-center justify-between py-4'>How is Cyfrin Updraft connected to CodeHawks?
+        <FiPlusCircle />
+        </span>
       </div>
     </div>
     <div>
